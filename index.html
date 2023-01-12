@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Productos</title>
+    <link rel="shortcut icon" href="/favicon/favicon.png" type="image/x-icon" />
+
+    <!--- BOOSTWATCH LUX THEME -->
+
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/lux/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#"> App de Productos con JS </a>
+    </nav>
+
+    <div class="container">
+      <!--APPWEB-->
+
+      <div
+        id="App"
+        class="card text-white bg-primary mb-3"
+        style="max-width: 20rem"
+      >
+        <div class="card-header">Appweb (by RS-DEVS)</div>
+        <div class="card-body">
+          <h4 class="card-title">Añadir producto</h4>
+          <!-------FORM------->
+          <form id="product-form">
+            <div class="form-group">
+              <label class="col-form-label mt-4" for="inputDefault"
+                >NOMBRE</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Insertar Nombre"
+                id="name"
+              />
+
+              <label class="col-form-label mt-4" for="inputDefault"
+                >PRECIO</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Insertar Precio"
+                id="price"
+                step="0.01"
+              />
+
+              <label class="col-form-label mt-4" for="inputDefault"
+                >FECHA</label
+              >
+              <div class="form-group">
+                <select class="form-select" id="date">
+                  <option>2019</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                </select>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="margin-left: 5rem; margin-top: 1rem"
+              value="Save"
+            >
+              Añadir
+            </button>
+          </form>
+          <!---END FORM-->
+        </div>
+      </div>
+
+      <div id="product-list"></div>
+    </div>
+    <script src="/js/app.js" type="module"></script>
+ </body>
+</html>
